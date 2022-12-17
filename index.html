@@ -1,0 +1,26 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saldo(saldoi, compra) {
+            return saldoi - compra
+        }
+        var si = window.prompt('Insira o seu saldo inicial')
+        var cm = window.prompt('Insira o valor da compra')
+        var sf = saldo(si, cm)
+
+        if(sf>0){window.alert('A compra foi realizada com sucesso.')
+        window.alert('seu saldo atual é de ' + sf + ' reais.')}
+        else if(sf<0){window.alert('saldo insuficiente');}
+
+    </script>
+</body>
+</html>
